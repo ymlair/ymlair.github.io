@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="">
+<html class="theme-next gemini use-motion" lang="">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -95,7 +95,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -226,6 +226,132 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/07/用 sed 命令校验数据格式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="龙葵">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="吞吐知识">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/07/用 sed 命令校验数据格式/" itemprop="url">Unbenannt</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Veröffentlicht am</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-07T16:26:38+08:00">
+                2018-04-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="用-sed-命令校验数据格式"><a href="#用-sed-命令校验数据格式" class="headerlink" title="用 sed 命令校验数据格式"></a>用 sed 命令校验数据格式</h3><h4 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h4><p>sed 是一种流编辑器，是Unix常见的命令行程序。能够完美的配合正则表达式使用，功能不同凡响。处理时，把当前处理的行存储在临时缓冲区中，称为“模式空间”（pattern space），接着用sed命令处理缓冲区中的内容，处理完成后，把缓冲区的内容送往屏幕。接着处理下一行，这样不断重复，直到文件末尾。    Sed主要用来自动编辑一个或多个文件；简化对文件的反复操作；编写转换程序等。</p>
+<h4 id="校验数据格式"><a href="#校验数据格式" class="headerlink" title="校验数据格式"></a>校验数据格式</h4><p>有时在本机做测试，需要从网上下载比较大的 CSV 文件，然而在导入数据库的过程中报错。做的友好一点的数据库会告诉你是格式错误，遇到不友好的就要折腾一番。为了避免这种情况，可以在下载文件后直接用 sed 命令检查下数据格式是否正确。<br>查看下载文件 <code>hotel.csv</code> 的正确数据格式：<br><code>head -n 1 hotel.csv</code></p>
+<p><img src="http://77ga2g.com1.z0.glb.clouddn.com/sp180407_155303-%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F.png" alt=""><br>如图，正确的数据格式应该是每行32个以逗号分割的字段，用 sed 检查是否有错误格式的数据：</p>
+<p><code>sed -E &#39;/([^,]*,){31}/d&#39; hotel.csv</code></p>
+<p>参数 -E：表示后面是标准正则；<br>字符  d：表示把正则匹配的行都删除，所以会显示不匹配的行；</p>
+<p><img src="http://77ga2g.com1.z0.glb.clouddn.com/sp180407_161538.png" alt=""></p>
+<p>不要试图去找各种牛X的软件去做这件事，因为一般这种文件会达到几个 G，打开它需要很大内存，而sed每次处理一行。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -961,7 +1087,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">Artikel</span>
                 </a>
               </div>
@@ -1029,7 +1155,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -1128,6 +1254,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
