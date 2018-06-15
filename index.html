@@ -2,15 +2,27 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next gemini use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
 <meta name="theme-color" content="#222">
+
+
+
 
 
 
@@ -38,10 +50,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
 
 
 
@@ -50,44 +58,25 @@
 
 <link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
 
 
 
 
 
 
-
-
-
-
-<meta name="description" content="未来的美好来源于一次意外">
-<meta property="og:type" content="website">
-<meta property="og:title" content="吞吐知识">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="吞吐知识">
-<meta property="og:description" content="未来的美好来源于一次意外">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="吞吐知识">
-<meta name="twitter:description" content="未来的美好来源于一次意外">
 
 
 
@@ -95,16 +84,14 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
-    version: '5.1.4',
+    scheme: 'Pisces',
+    version: '6.3.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -116,12 +103,36 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="未来的美好来源于一次意外">
+<meta property="og:type" content="website">
+<meta property="og:title" content="吞吐知识">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="吞吐知识">
+<meta property="og:description" content="未来的美好来源于一次意外">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="吞吐知识">
+<meta name="twitter:description" content="未来的美好来源于一次意外">
+
+
+
+
+
 
   <link rel="canonical" href="http://yoursite.com/"/>
 
 
 
-
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>吞吐知识</title>
   
@@ -129,22 +140,41 @@
 
 
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-113384222-1', 'auto');
-  ga('send', 'pageview');
-</script>
 
 
 
 
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
 
   
   
@@ -161,19 +191,17 @@
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">吞吐知识</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -181,48 +209,89 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Startseite
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archiv
-          </a>
-        </li>
-      
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
 
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />Search</a>
+        </li>
       
     </ul>
   
 
   
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
 </nav>
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -235,6 +304,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -244,7 +315,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙葵">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="未来的美好来源于一次意外">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -259,25 +330,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/07/用-sed-命令校验数据格式/" itemprop="url">用 sed 命令校验数据格式</a></h1>
+                <a class="post-title-link" href="/2018/04/07/用-sed-命令校验数据格式/" itemprop="url">
+                  用 sed 命令校验数据格式
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-07T16:38:17+08:00">
-                2018-04-07
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-04-07 16:38:17" itemprop="dateCreated datePublished" datetime="2018-04-07T16:38:17+08:00">2018-04-07</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-06-15 09:46:59" itemprop="dateModified" datetime="2018-06-15T09:46:59+08:00">2018-06-15</time>
+              
             
           </span>
 
@@ -323,6 +421,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -361,6 +462,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -370,7 +473,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙葵">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="未来的美好来源于一次意外">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -385,25 +488,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/31/Docker初步学习-k/" itemprop="url">Docker初步学习-$k</a></h1>
+                <a class="post-title-link" href="/2018/01/31/Docker初步学习-k/" itemprop="url">
+                  Docker初步学习-$k
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-31T09:53:17+08:00">
-                2018-01-31
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-01-31 09:53:17" itemprop="dateCreated datePublished" datetime="2018-01-31T09:53:17+08:00">2018-01-31</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-06-15 09:46:59" itemprop="dateModified" datetime="2018-06-15T09:46:59+08:00">2018-06-15</time>
+              
             
           </span>
 
@@ -465,6 +595,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -503,6 +636,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
@@ -512,7 +647,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙葵">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="未来的美好来源于一次意外">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -527,25 +662,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/31/Docker-k-搭建一套php开发环境/" itemprop="url">Docker($k)搭建一套php开发环境</a></h1>
+                <a class="post-title-link" href="/2018/01/31/Docker-k-搭建一套php开发环境/" itemprop="url">
+                  Docker($k)搭建一套php开发环境
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-31T09:52:01+08:00">
-                2018-01-31
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-01-31 09:52:01" itemprop="dateCreated datePublished" datetime="2018-01-31T09:52:01+08:00">2018-01-31</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-06-15 09:46:59" itemprop="dateModified" datetime="2018-06-15T09:46:59+08:00">2018-06-15</time>
+              
             
           </span>
 
@@ -599,6 +761,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -635,6 +800,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -646,7 +813,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙葵">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="未来的美好来源于一次意外">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -661,25 +828,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/31/Chromeless-Demo/" itemprop="url">Chromeless Demo</a></h1>
+                <a class="post-title-link" href="/2018/01/31/Chromeless-Demo/" itemprop="url">
+                  Chromeless Demo
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-31T09:50:33+08:00">
-                2018-01-31
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-01-31 09:50:33" itemprop="dateCreated datePublished" datetime="2018-01-31T09:50:33+08:00">2018-01-31</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-06-15 09:46:59" itemprop="dateModified" datetime="2018-06-15T09:46:59+08:00">2018-06-15</time>
+              
             
           </span>
 
@@ -729,136 +923,9 @@
         
       
     </div>
-    
-    
-    
 
     
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/31/用 sed 命令校验数据格式/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="龙葵">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="吞吐知识">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/31/用 sed 命令校验数据格式/" itemprop="url">用 sed 命令校验数据格式</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-31T09:50:33+08:00">
-                2018-01-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Chromeless-简介"><a href="#Chromeless-简介" class="headerlink" title="Chromeless 简介"></a>Chromeless 简介</h2><p>Chrome 浏览器有一种模式叫做 Chrome Headless，在这种模式下，允许你正常运行 Chrome 浏览器，但是没有界面；想要调试这种模式下打开的网站，可以通过它提供的接口来实现，而 <a href="https://github.com/graphcool/chromeless" target="_blank" rel="noopener">Chromeless</a> 就是把这层接口做了封装，让你使用接口更方便。通过它，可以控制浏览器行为，如打开网站、点击按钮、填充表单、获取 DOM 元素…</p>
-<h2 id="可以用来做什么"><a href="#可以用来做什么" class="headerlink" title="可以用来做什么"></a>可以用来做什么</h2><p>1 .  可以<a href="https://github.com/graphcool/chromeless/blob/master/examples/google-screenshot.js" target="_blank" rel="noopener">获取网页截图</a><br>2 .  根据页面 document 文档<a href="https://github.com/graphcool/chromeless/blob/master/examples/google-pdf.js" target="_blank" rel="noopener">生成 PDF 文件</a><br>3 .  编写测试代码，自动化测试网页<br>4 .  基于真实的浏览器环境，可以编写爬虫程序</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>首先要安装支持 Chrome Headless 模式的浏览器。目前，Mac 上 Chrome 59 beta<br>版本与 Linux 上的 Chrome 57+ 已经开始支持 headless 特性。Windows 上 Chrome 暂时不支持，可以使用 <a href="https://www.google.com/chrome/browser/canary.html" target="_blank" rel="noopener">Chrome Canary 60</a> 进行开发。<br>下面是 Ubuntu17.10 的无界面浏览器启动命令示例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">google-chrome \</span><br><span class="line">--remote-debugging-port=9222 \</span><br><span class="line">--disable-gpu \</span><br><span class="line">--no-sandbox  \</span><br><span class="line">--headless</span><br></pre></td></tr></table></figure></p>
-<p>Chromeless 用 NodeJS 编写，要求 NodeJS 版本8.2+，安装：<br><code>npm install chromeless</code></p>
-<h2 id="如何用于网页测试"><a href="#如何用于网页测试" class="headerlink" title="如何用于网页测试"></a>如何用于网页测试</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">const &#123; Chromeless &#125; = require(&apos;chromeless&apos;)</span><br><span class="line">const &#123; expect &#125;  = require(&apos;chai&apos;)</span><br><span class="line"></span><br><span class="line">async function run()&#123;</span><br><span class="line">	const chromeless = new Chromeless()</span><br><span class="line">	const firstPage= await chromeless</span><br><span class="line">		.goto(&apos;http://www.w3school.com.cn&apos;)</span><br><span class="line">		.wait(&apos;#navsecond&apos;)</span><br><span class="line">		.evaluate(() =&gt; &#123;</span><br><span class="line">  			  // this will be executed in Chrome</span><br><span class="line">  			  const links = [].map.call(</span><br><span class="line">  			    document.querySelectorAll(&apos;#navsecond ul:nth-child(2) li&apos;),</span><br><span class="line">  			    a =&gt; (a.innerText.trim())</span><br><span class="line">  			  )</span><br><span class="line">  			  return links</span><br><span class="line">  			&#125;)</span><br><span class="line">expect(firstPage).to.have.members([&quot;JS&quot;,&quot;HTML5&quot;,&quot;XHTML&quot;,&quot;CSS&quot;,&quot;CSS3&quot;,&quot;TCP/IP&quot;])</span><br><span class="line">await chromeless.end()</span><br><span class="line">&#125;</span><br><span class="line"># 运行并捕捉错误</span><br><span class="line">run().catch(console.error.bind(console))</span><br></pre></td></tr></table></figure>
-<p>这里用到了 <a href="http://chaijs.com/api/bdd/" target="_blank" rel="noopener">Chai</a> 断言库，代码实现的功能是验证 <a href="http://www.w3school.com.cn" target="_blank" rel="noopener">W3school</a> 网站首页，左侧第一个 ul 列表的内容是否包含以下内容： JS、HTML5、XHTML、CSS、CSS3、TCP/IP”。<br>命令详解：<br>goto：打开加载网站 <code>http://www.w3school.com.cn</code>；<br>wait：等待指定的元素 <code>#navsecond</code>（这是 <a href="http://www.w3school.com.cn/cssref/css_selectors.asp" target="_blank" rel="noopener">CSS selector</a>） 渲染成功之后才往下执行；<br>evaluate：会将里面的 JS 代码送到 浏览器中执行，并获取返回结果；<br>运行结果：<br><img src="http://upload-images.jianshu.io/upload_images/5306603-2d9f002f40084a27.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="图一：网页测试Demo结果"></p>
-<h2 id="如何爬取-Google-Search-Result"><a href="#如何爬取-Google-Search-Result" class="headerlink" title="如何爬取 Google Search Result"></a>如何爬取 Google Search Result</h2><p>下面代码实现的功能是使用 Google Search 搜索关键字，并返回结果的 Title 和链接地址。<br><a href="https://asciinema.org/a/KlCxZMtSAlpQj9AHhSs8kSIVq" target="_blank" rel="noopener">查看执行结果</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">const &#123; Chromeless &#125; = require(&apos;chromeless&apos;);</span><br><span class="line"></span><br><span class="line">async function run()&#123;</span><br><span class="line">	const chromeless = new Chromeless()</span><br><span class="line">	const firstPage= await chromeless</span><br><span class="line">		.goto(&apos;https://www.google.com&apos;)</span><br><span class="line">		.wait(&apos;input[name=&quot;q&quot;]&apos;)</span><br><span class="line">		.type(&apos;云纵&apos;, &apos;input[name=&quot;q&quot;]&apos;)</span><br><span class="line">		.press(13) // press enter</span><br><span class="line">		.wait(&apos;#foot&apos;)</span><br><span class="line">		</span><br><span class="line">	let hasNextPage = true</span><br><span class="line">	let page = 1</span><br><span class="line">	let result = null</span><br><span class="line">	while (hasNextPage)&#123;</span><br><span class="line">		if(page===1)&#123;</span><br><span class="line">			result = await chromeless</span><br><span class="line">				.evaluate(() =&gt; &#123;</span><br><span class="line">  				  // this will be executed in Chrome</span><br><span class="line">  				  const links = [].map.call(</span><br><span class="line">  				    document.querySelectorAll(&apos;.g h3 a&apos;),</span><br><span class="line">  				    a =&gt; (&#123;title: a.innerText, href: a.href&#125;)</span><br><span class="line">  				  )</span><br><span class="line">  				  return links</span><br><span class="line">  				&#125;)</span><br><span class="line">		&#125;else&#123;</span><br><span class="line">			result = await chromeless</span><br><span class="line">				.scrollTo(200,400)</span><br><span class="line">				.scrollToElement(&apos;#foot td:nth-last-child(1)&apos;)</span><br><span class="line">				.click(&apos;#foot td:nth-last-child(1)&apos;)</span><br><span class="line">				.wait(2000)</span><br><span class="line">				.wait(&apos;#foot&apos;)</span><br><span class="line">				.evaluate(() =&gt; &#123;</span><br><span class="line">	                          // this will be executed in Chrome</span><br><span class="line">	                          const links = [].map.call(</span><br><span class="line">	                            document.querySelectorAll(&apos;.g h3 a&apos;),</span><br><span class="line">	                            a =&gt; (&#123;title: a.innerText, href: a.href&#125;)</span><br><span class="line">	                          )</span><br><span class="line">	                          return links</span><br><span class="line">	                        &#125;)</span><br><span class="line">		&#125;</span><br><span class="line">		console.log(result)</span><br><span class="line">		hasNextPage = await chromeless.evaluate(() =&gt; &#123;</span><br><span class="line">  			  let nextPage =  document.querySelector(&apos;#foot td:nth-last-child(1)&apos;).innerText</span><br><span class="line">  			  //return (nextPage===&apos;Next&apos;)</span><br><span class="line">  			  return nextPage.length</span><br><span class="line">  			&#125;)</span><br><span class="line">		console.log(`第$&#123;page&#125;页`)</span><br><span class="line">		console.log(hasNextPage ? &apos;存在下一页&apos; : &apos;不存在下一页&apos;)</span><br><span class="line">		page++</span><br><span class="line">	&#125;</span><br><span class="line">	await chromeless.end()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">run().catch(console.error.bind(console))</span><br></pre></td></tr></table></figure>
-<p>命令解释：<br><code>.type(&#39;云纵&#39;, &#39;input[name=&quot;q&quot;]&#39;)</code>： 在 CSS 选择器 <code>input[name=&quot;q&quot;]</code> 选中的元素（实际上就是 Google Search 搜索框）内输入’云纵‘两个字；<br><code>.press(13)</code> ：按下键盘的 Enter 键，就是在搜索框输入文字后执行查询；<br> <code>.scrollTo(200,400)</code> ：滚动到距离页面左侧200px，右侧400px的位置；<br><code>.scrollToElement(&#39;#foot td:nth-last-child(1)&#39;)</code>：滚动到 CSS 选择器 <code>#foot td:nth-last-child(1)</code> 选中元素（实际是 Google Search Result 的下一页链接），使元素可见；<br><code>.click(&#39;#foot td:nth-last-child(1)&#39;)</code>：点击元素；<br><code>.wait(2000)</code>：参数是数字时，表示等待时间，参数是 CSS 选择器时表示等待元素渲染完成；</p>
-<h2 id="Async-与-Await"><a href="#Async-与-Await" class="headerlink" title="Async 与 Await"></a>Async 与 Await</h2><p>开发时要注意这两个关键字 async 和 await，使用 Chromeless，会用到他们，这是 ES7 实现的异步方案，需要了解以下内容：<br>1 .  function 前面的 async 标识符表示函数内有异步操作；<br>2 .  await 强调后面的异步操作执行完成后才能继续；<br>3 .  await 只能用在async标识的函数内；<br>4 .  await 后写非异步操作也可以，会直接执行</p>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>1 .  <a href="https://cnodejs.org/topic/5640b80d3a6aa72c5e0030b6" target="_blank" rel="noopener">体验异步的终极解决方案-ES7的Async/Await</a><br>2 .  <a href="https://zhuanlan.zhihu.com/p/27100187" target="_blank" rel="noopener">初探 Headless Chrome</a></p>
-
-          
-        
-      
-    </div>
     
     
     
@@ -895,6 +962,8 @@
 
   
   
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -906,7 +975,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="龙葵">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="未来的美好来源于一次意外">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
@@ -921,25 +990,52 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/01/31/Supervisor-让崩溃的程序自动重启/" itemprop="url">Supervisor 让崩溃的程序自动重启</a></h1>
+                <a class="post-title-link" href="/2018/01/31/Supervisor-让崩溃的程序自动重启/" itemprop="url">
+                  Supervisor 让崩溃的程序自动重启
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Veröffentlicht am</span>
+                <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-31T09:22:05+08:00">
-                2018-01-31
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-01-31 09:22:05" itemprop="dateCreated datePublished" datetime="2018-01-31T09:22:05+08:00">2018-01-31</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-06-15 09:46:59" itemprop="dateModified" datetime="2018-06-15T09:46:59+08:00">2018-06-15</time>
+              
             
           </span>
 
@@ -1141,6 +1237,9 @@
         
       
     </div>
+
+    
+
     
     
     
@@ -1179,9 +1278,6 @@
           </div>
           
 
-
-          
-
         </div>
         
           
@@ -1210,44 +1306,53 @@
               <p class="site-description motion-element" itemprop="description">未来的美好来源于一次意外</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">6</span>
-                  <span class="site-state-item-name">Artikel</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
+                <div class="site-state-item site-state-posts">
                 
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">Tags</span>
+                  <a href="/archives/">
                 
-              </div>
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">tags</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
             
-
-          </nav>
-
           
-
-          
-
-          
-          
-
-          
-          
-
           
 
         </div>
@@ -1268,16 +1373,20 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">龙葵</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
 
 
 
@@ -1285,12 +1394,31 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.3.0</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="Total Visitors">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="Total Views">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
 
 
 
@@ -1329,7 +1457,11 @@
 
 
 
-  
+
+
+
+
+
 
 
 
@@ -1349,16 +1481,6 @@
 
   
   
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
     <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   
 
@@ -1367,18 +1489,13 @@
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
 
 
 
@@ -1386,9 +1503,9 @@
   
 
 
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
 
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
 
 
 
@@ -1397,15 +1514,11 @@
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
 
 
 
   
-
-
-  
-
 
 
 
@@ -1432,14 +1545,334 @@
 
 
 
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
 
 
   
 
-
-
-
-
   
 
   
@@ -1447,6 +1880,10 @@
   
 
   
+  
+
+  
+
   
 
   
