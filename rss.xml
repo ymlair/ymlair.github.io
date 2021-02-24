@@ -23,10 +23,42 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Tue, 23 Feb 2021 18:34:32 &#43;0800</lastBuildDate>
+        <lastBuildDate>Wed, 24 Feb 2021 19:35:08 &#43;0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://5hui.win/rss.xml" />
         
+        
+            <item>
+                <title>Chrome自带网页长截图功能</title>
+                <link>https://5hui.win/posts/chrome%E8%87%AA%E5%B8%A6%E7%BD%91%E9%A1%B5%E9%95%BF%E6%88%AA%E5%9B%BE%E5%8A%9F%E8%83%BD/</link>
+                <guid isPermaLink="true">https://5hui.win/posts/chrome%E8%87%AA%E5%B8%A6%E7%BD%91%E9%A1%B5%E9%95%BF%E6%88%AA%E5%9B%BE%E5%8A%9F%E8%83%BD/</guid>
+                <pubDate>Wed, 24 Feb 2021 19:18:27 &#43;0800</pubDate>
+                
+                    <author>hpmarkup@gmail.com (ymlair)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description>&lt;ul&gt;
+&lt;li&gt;打开 Chrome&lt;/li&gt;
+&lt;li&gt;调起开发者工具 &lt;code&gt;Command+option+j&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;按下 &lt;code&gt;Command+shift+p&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;输入 &lt;code&gt;full&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;按下回车键&lt;/li&gt;
+&lt;li&gt;Done&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+                
+                
+                
+                
+                
+                    
+                        
+                    
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>Golang实现冒泡排序</title>
